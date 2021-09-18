@@ -1,12 +1,15 @@
 import api from "../api";
 
-const findPeople = () => {
-  return api.get('/');
-  //return api.get(`?limit=10&q=${name}`);
+const findPeople = (name: string, next: string="")  => {
+  if (next) {
+    return api.post(`people/_search/?after=${next}`, {   name: { term: `${name}` },   });   
+  } else {
+    return api.post(`people/_search/`, { name: { term: `${name}` } });
+  }
 };
 
 const PeopleService = {
-  findPeople
+  findPeople,
 };
 
 export default PeopleService;

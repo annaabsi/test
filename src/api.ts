@@ -1,12 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-  //baseURL: "https://search.torre.co/people/_search/",
-  baseURL: "https://torre.co/api/genome/people?limit=2&q=anna",
+  baseURL: "https://search.torre.co/",
   headers: {
-    "Content-type": "application/json"
+    "Content-type": "application/json",
   },
-  // data: {
-  //   "name":{"term":"anna"}
-  // }
 });
