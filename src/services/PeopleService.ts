@@ -1,6 +1,6 @@
 import api from "../api";
 
-const findPeople = (name: string, next: string="")  => {
+const findPeopleApi = (name: string, next: string="")  => {
   if (next) {
     return api.post(`people/_search/?after=${next}`, {   name: { term: `${name}` },   });   
   } else {
@@ -9,7 +9,7 @@ const findPeople = (name: string, next: string="")  => {
 };
 
 const PeopleService = {
-  findPeople,
+  findPeopleApi,
 };
 
 export default PeopleService;

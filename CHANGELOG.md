@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-09-18 19:00 GTM-5
+
+Changes:
+
+- Add search bar with events
+- Support for queries with after API pagination 
+
 ## 2021-09-18 18:00 GTM-5
 
 Changes:

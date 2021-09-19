@@ -60,10 +60,12 @@ yarn deploy # deploy to gh-pages
 
 Changelogs stored [here](CHANGELOG.md)
 
-- [x] ReactJs start
+- [x] ReactJs project start
 - [x] Github Pages deploy
-- [x] Fetch data dinamically from API
-- [ ] API Pagination
+- [x] API: Fetch data dinamically
+- [x] API: Params handler
+- [x] Search bar
+- [ ] API: Pagination
 - [ ] Redis to data cache: faster loadings
 - [ ] Landing layout
 - [ ] 
