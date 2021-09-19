@@ -1,11 +1,16 @@
 import api from "../api";
 
-const findPeopleApi = (name: string, next: string="")  => {
+const findPeopleApi = (name: string, next: string = "") => {
+
+  // Parsing endpoint: Base
+  let endpointUrl = `people/_search/?size=20&`;
+
+  // Parsing endpoint: Pagination
   if (next) {
-    return api.post(`people/_search/?after=${next}`, {   name: { term: `${name}` },   });   
-  } else {
-    return api.post(`people/_search/`, { name: { term: `${name}` } });
+    endpointUrl += `after=${next}`;
   }
+
+  return api.post(endpointUrl, { name: { term: `${name}` } });
 };
 
 const PeopleService = {

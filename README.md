@@ -65,10 +65,10 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] API: Fetch data dinamically
 - [x] API: Params handler
 - [x] Search bar
-- [ ] API: Pagination
+- [x] API: Pagination with infinite scroll
+- [ ] Search page styling
 - [ ] Redis to data cache: faster loadings
 - [ ] Landing layout
-- [ ] 
 
 <p align="center">
   <a href="#">
