@@ -2,8 +2,9 @@ import React, { useState, useEffect, ChangeEvent } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import PeopleDataService from "../../services/PeopleService";
 import PeopleData from "../../types/People";
+import "./index.scss";
 
-const PeopleList: React.FC = () => {
+const PeopleList: React.FC = (props) => {
   const [people, setPeople] = useState<Array<PeopleData>>([]);
   const [searchName, setSearchName] = useState<string>("");
   const [nextPage, setNextPage] = useState<string>("");
@@ -50,39 +51,67 @@ const PeopleList: React.FC = () => {
 
   return (
     <>
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Search by name"
-        value={searchName}
-        onChange={onChangeSearchPeople}
-        onKeyPress={(event) => {
-          if (event.key === "Enter") {
-            findPeople();
+      <div className="container">
+        <h1 className="headline">Discover Torre genomes</h1>
+        <p>About Torre</p>
+        <div className="bar">
+          <input
+            className="searchbar"
+            type="text"
+            placeholder="Search by name"
+            title="Search"
+            value={searchName}
+            onChange={onChangeSearchPeople}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                findPeople();
+              }
+            }}
+          />
+        </div>
+        <div>
+          There are <strong>{totalSize}</strong> profiles matching{" "}
+          <strong>{searchName}</strong>{" "}
+        </div>
+        <InfiniteScroll
+          dataLength={people.length}
+          next={fetchMoreData}
+          hasMore={hasMore}
+          loader={
+            people.length !== 0 ? <h4 className="search">Loading...</h4> : ""
           }
-        }}
-      />
-      <ul className="list-group"></ul>
-      <InfiniteScroll
-        dataLength={people.length}
-        next={fetchMoreData}
-        hasMore={hasMore}
-        loader={
-          people.length !== 0 ? <h4>Loading...</h4> : <h4>Search by name</h4>
-        }
-        endMessage={
-          <p style={{ textAlign: "center" }}>
-            <b>End of results</b>
-          </p>
-        }
-      >
-        {people &&
-          people.map((person, index) => (
-            <li onClick={() => console.log(person.name)} key={index}>
-              #{index} - {person.name}
-            </li>
-          ))}
-      </InfiniteScroll>
+          endMessage={
+            <p style={{ textAlign: "center" }}>
+              <b>End of results</b>
+            </p>
+          }
+        >
+          {people &&
+            people.map((person, index) => (
+              <div className="col">
+                <div className="card" key={index}>
+                  <h2>{person.name}</h2>
+
+                  <p>{person.locationName}</p>
+                  <div
+                    className="pic"
+                    style={{ backgroundImage: "url(" + person.picture + ")" }}
+                  ></div>
+                  <div className="headline">
+                    <span>{person.professionalHeadline}</span>
+                  </div>
+                  <a
+                    href={`https://torre.co/${person.username}`}
+                    target="_blank"
+                  >
+                    <button></button>
+                    <i className="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            ))}
+        </InfiniteScroll>
+      </div>
     </>
   );
 };

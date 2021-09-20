@@ -1,6 +1,27 @@
 # Changelog
 
-## 2021-09-19 02:00 GTM-5
+## 2021-09-20 01:00 GTM-5
+
+Changes:
+
+- Changed color styles on different components
+- Search counter results
+
+## 2021-09-19 22:00 GTM-5
+
+Changes:
+
+- Add particles background
+- Custom info cards style
+
+## 2021-09-19 10:00 GMT-5
+
+Changes:
+
+- Add info cards of each person
+- Retrieve all data from API, not just name.
+
+## 2021-09-19 02:00 GMT-5
 
 Changes:
 
@@ -11,7 +32,6 @@ Changes:
 Bugs:
 
 - Wrong number of results in [https://torre.co/search/people-name?q=name%3Atorrenegra](https://torre.co/search/people-name?q=name%3Atorrenegra)
-
 
 <p align="center">
   <a href="#">
@@ -29,20 +49,20 @@ Bugs:
 
 > 37 results on API
 
-## 2021-09-18 19:00 GTM-5
+## 2021-09-18 19:00 GMT-5
 
 Changes:
 
 - Add search bar with events
 - Support for queries with after API pagination
 
-## 2021-09-18 18:00 GTM-5
+## 2021-09-18 18:00 GMT-5
 
 Changes:
 
 - Get users data from https://search.torre.co/people/_search/
 
-## 2021-09-18 16:00 GTM-5
+## 2021-09-18 16:00 GMT-5
 
 Changes:
 
@@ -53,14 +73,14 @@ Problems:
 
 - Failed to get data because it was blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
-## 2021-09-18 12:00 GTM-5
+## 2021-09-18 12:00 GMT-5
 
 Changes:
 
 - Add Bootstrap
 - Add React Router
 
-## 2021-09-18 10:00 GTM-5
+## 2021-09-18 10:00 GMT-5
 
 Changes:
 

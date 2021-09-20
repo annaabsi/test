@@ -41,7 +41,7 @@ If you want to change the host, change the following lines in [package.json](pac
 ```json
 {
   "homepage": "http://annaabsi.github.io/test",
-  "...":"...",
+  "...": "..."
 }
 ```
 
@@ -50,6 +50,7 @@ Build the page to deploy to Github Pages.
 ```bash
 yarn deploy # deploy to gh-pages
 ```
+
 <p align="center">
   <a href="#">
     <img src="https://imgur.com/AeLkMEG.png" height="1" width="100%">
@@ -66,9 +67,9 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] API: Params handler
 - [x] Search bar
 - [x] API: Pagination with infinite scroll
-- [ ] Search page styling
-- [ ] Redis to data cache: faster loadings
+- [ ] Search page: searchbar style
 - [ ] Landing layout
+- [ ] Responsive
 
 <p align="center">
   <a href="#">
