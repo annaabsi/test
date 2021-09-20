@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-20 14:30 GTM-5
+
+Bug:
+
+- Deploy to Vercel instead of Github Pages
+
 ## 2021-09-20 14:00 GTM-5
 
 Changes:
