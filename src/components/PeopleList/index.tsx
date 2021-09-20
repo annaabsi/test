@@ -90,7 +90,6 @@ const PeopleList: React.FC = (props) => {
               <div className="flex-grid-item">
                 <div className="card" key={index}>
                   <h2>{person.name}</h2>
-
                   <p>{person.locationName}</p>
                   <div
                     className="pic"
