@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-09-20 14:00 GTM-5
+
+Changes:
+
+- Add searchbar style
+- Add responsive tags in css for all components
+- Add docs to use the project
+
 ## 2021-09-20 01:00 GTM-5
 
 Changes:

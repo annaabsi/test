@@ -7,7 +7,7 @@
   <h3 align="center"><strong>Software Developer Intern Technical Test</strong><br></h3>
   <p align="center">
     <br />
-    <a href="https://annaabsi.github.io/test/">View</a>
+    <a href="https://annaabsi.github.io/test/">Live preview</a>
   </p>
 </p>
 
@@ -67,9 +67,10 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] API: Params handler
 - [x] Search bar
 - [x] API: Pagination with infinite scroll
-- [ ] Search page: searchbar style
-- [ ] Landing layout
-- [ ] Responsive
+- [x] Search page: searchbar style
+- [x] Landing layout
+- [x] Responsive
+- [x] Documentation
 
 <p align="center">
   <a href="#">

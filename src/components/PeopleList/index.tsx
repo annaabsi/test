@@ -19,22 +19,22 @@ const PeopleList: React.FC = (props) => {
   const findPeople = () => {
     PeopleDataService.findPeopleApi(searchName, nextPage).then((response) => {
       setPeople(() => {
-        console.log(response.data.results);
+        // console.log(response.data.results);
         return response.data.results;
       });
       setTotalSize(() => {
-        console.log(response.data.total);
+        // console.log(response.data.total);
         return response.data.total;
       });
       setNextPage(() => {
-        console.log(response.data.pagination.next);
+        // console.log(response.data.pagination.next);
         return response.data.pagination.next;
       });
     });
   };
 
   const fetchMoreData = () => {
-    if (people.length + 20 >= totalSize) {
+    if (people.length >= totalSize) {
       setHasMore(() => {
         return false;
       });
@@ -44,21 +44,21 @@ const PeopleList: React.FC = (props) => {
       setPeople(people.concat(response.data.results));
       setNextPage(response.data.pagination.next);
     });
-
-    console.log(people.length + 20);
-    console.log(totalSize);
   };
 
   return (
     <>
       <div className="container">
-        <h1 className="headline">Discover Torre genomes</h1>
-        <p>About Torre</p>
+        <div className="headline">
+          <h1>Discover Torre Genomes</h1>
+          <p>To build the world’s network that automates recruiting we have to provide massive value to candidates.</p>
+          <p>This is, and will always be, our focus, our drive, our passion.</p>
+        </div>
         <div className="bar">
           <input
             className="searchbar"
             type="text"
-            placeholder="Search by name"
+            placeholder="Search people by name"
             title="Search"
             value={searchName}
             onChange={onChangeSearchPeople}
@@ -68,27 +68,26 @@ const PeopleList: React.FC = (props) => {
               }
             }}
           />
+          <i className="fas fa-search"></i>
         </div>
-        <div>
-          There are <strong>{totalSize}</strong> profiles matching{" "}
-          <strong>{searchName}</strong>{" "}
-        </div>
+        {people.length !== 0 &&
+          <div>
+            There are <strong>{totalSize}</strong> profiles matching
+          </div>
+        }
+
         <InfiniteScroll
           dataLength={people.length}
           next={fetchMoreData}
           hasMore={hasMore}
+          className="flex-grid"
           loader={
             people.length !== 0 ? <h4 className="search">Loading...</h4> : ""
-          }
-          endMessage={
-            <p style={{ textAlign: "center" }}>
-              <b>End of results</b>
-            </p>
           }
         >
           {people &&
             people.map((person, index) => (
-              <div className="col">
+              <div className="flex-grid-item">
                 <div className="card" key={index}>
                   <h2>{person.name}</h2>
 
@@ -97,7 +96,7 @@ const PeopleList: React.FC = (props) => {
                     className="pic"
                     style={{ backgroundImage: "url(" + person.picture + ")" }}
                   ></div>
-                  <div className="headline">
+                  <div className="bio">
                     <span>{person.professionalHeadline}</span>
                   </div>
                   <a
