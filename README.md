@@ -7,7 +7,7 @@
   <h3 align="center"><strong>Software Developer Intern Technical Test</strong><br></h3>
   <p align="center">
     <br />
-    <a href="https://annaabsi.github.io/test/">Live preview</a>
+    <a href="https://test-annaabsi.vercel.app/">Live preview</a>
   </p>
 </p>
 
@@ -19,36 +19,17 @@
 
 ## Installation
 
-Different ways to deploy the app
-
 ### Dependencies
 
 - nvm: [Node Version Manager](https://github.com/nvm-sh/nvm)
 - yarn: [Package manager](https://yarnpkg.com/getting-started/install)
 
-### Deploy to localhost
+### Localhost
 
 ```bash
 yarn install # install dependencies
 yarn start # localhost:3000
 yarn test # test
-```
-
-### Deploy to Github Pages
-
-If you want to change the host, change the following lines in [package.json](package.json)
-
-```json
-{
-  "homepage": "http://annaabsi.github.io/test",
-  "...": "..."
-}
-```
-
-Build the page to deploy to Github Pages.
-
-```bash
-yarn deploy # deploy to gh-pages
 ```
 
 <p align="center">
@@ -62,7 +43,7 @@ yarn deploy # deploy to gh-pages
 Changelogs stored [here](CHANGELOG.md)
 
 - [x] ReactJs project start
-- [x] Github Pages deploy
+- [x] ~~Github Pages deploy~~ Vercel deploy
 - [x] API: Fetch data dinamically
 - [x] API: Params handler
 - [x] Search bar
