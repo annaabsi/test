@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://search.torre.co/",
+  baseURL: process.env.REACT_APP_API_LINK,
   headers: {
     "Content-type": "application/json",
   },

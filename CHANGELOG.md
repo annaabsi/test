@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 15:30 GTM-5
+
+Changes:
+
+- Define end-points as env variables
+
 ## 2021-09-20 14:30 GTM-5
 
 Bug:
@@ -33,7 +39,7 @@ Changes:
 Changes:
 
 - Add info cards of each person
-- Retrieve all data from API, not just name.
+- Retrieve all data from API, not just name
 
 ## 2021-09-19 02:00 GMT-5
 
@@ -85,7 +91,7 @@ Changes:
 
 Problems:
 
-- Failed to get data because it was blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+- Failed to get data because it was blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
 
 ## 2021-09-18 12:00 GMT-5
 

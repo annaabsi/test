@@ -61,6 +61,7 @@ yarn deploy # deploy to gh-pages
 
 Changelogs stored [here](CHANGELOG.md)
 
+### v0.1
 - [x] ReactJs project start
 - [x] Github Pages deploy
 - [x] API: Fetch data dinamically
@@ -71,6 +72,16 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] Landing layout
 - [x] Responsive
 - [x] Documentation
+
+### v0.2 (Feedback)
+- [x] Define end-points as env variables
+- [ ] Fix texts going out of borders
+- [ ] Fix colors and contrast for some texts
+- [ ] Delete unused imports and variables
+- [ ] Delete commented code
+- [ ] Divide code in multiple components
+- [ ] Delete hardcoded variables
+- [ ] CSS with BEM methodology
 
 <p align="center">
   <a href="#">
