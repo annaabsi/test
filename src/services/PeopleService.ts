@@ -1,9 +1,9 @@
 import api from "../api";
 
-const findPeopleApi = (name: string, next: string = "") => {
+const findPeopleApi = (name: string, next: string = "", size: number = 20) => {
 
   // Parsing endpoint: Base
-  let endpointUrl = `people/_search/?size=20&`;
+  let endpointUrl = `people/_search/?size=${size}&`;
 
   // Parsing endpoint: Pagination
   if (next) {

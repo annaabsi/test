@@ -80,7 +80,7 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] Delete unused imports and variables
 - [x] Delete commented code
 - [x] Divide code in multiple components
-- [ ] Delete hardcoded variables
+- [x] Delete hardcoded variables
 - [ ] CSS with BEM methodology
 
 <p align="center">

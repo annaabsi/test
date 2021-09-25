@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 17:40 GTM-5
+
+Changes:
+
+- Delete hardcoded variables
+
 ## 2021-09-25 17:30 GTM-5
 
 Changes:
