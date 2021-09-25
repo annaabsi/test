@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 17:30 GTM-5
+
+Changes:
+
+- Divide code in multiple components
+
 ## 2021-09-25 16:15 GTM-5
 
 Changes:

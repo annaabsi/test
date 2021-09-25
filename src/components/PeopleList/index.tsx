@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Card from "../Card"
 import PeopleDataService from "../../services/PeopleService";
 import PeopleData from "../../types/People";
 import "./index.scss";
@@ -84,27 +85,7 @@ const PeopleList: React.FC = () => {
         >
           {people &&
             people.map((person, index) => (
-              <div className="flex-grid-item">
-                <div className="card" key={index}>
-                  <h2>{person.name}</h2>
-                  <p>{person.locationName}</p>
-                  <div
-                    className="pic"
-                    style={{ backgroundImage: "url(" + person.picture + ")" }}
-                  ></div>
-                  <div className="bio">
-                    <span>{person.professionalHeadline}</span>
-                  </div>
-                  <a
-                    href={`https://torre.co/${person.username}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button></button>
-                    <i className="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
+              <Card {...person} key={index}/>
             ))}
         </InfiniteScroll>
       </div>

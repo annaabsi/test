@@ -79,7 +79,7 @@ Changelogs stored [here](CHANGELOG.md)
 - [X] Fix colors and contrast for some texts
 - [x] Delete unused imports and variables
 - [x] Delete commented code
-- [ ] Divide code in multiple components
+- [x] Divide code in multiple components
 - [ ] Delete hardcoded variables
 - [ ] CSS with BEM methodology
 
