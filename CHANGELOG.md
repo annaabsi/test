@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 15:45 GTM-5
+
+Changes:
+
+- Fix texts going out of borders
+
 ## 2021-09-25 15:30 GTM-5
 
 Changes:

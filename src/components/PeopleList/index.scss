@@ -122,10 +122,13 @@ div {
       opacity: 0.7;
       font-size: 12px;
       letter-spacing: 1px;
-      writing-mode: vertical-lr;
+      writing-mode: vertical-rl;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      height: 60%;
+      height: 123px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 38px;
     }
     .pic {
       z-index: 100;

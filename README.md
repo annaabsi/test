@@ -75,7 +75,7 @@ Changelogs stored [here](CHANGELOG.md)
 
 ### v0.2 (Feedback)
 - [x] Define end-points as env variables
-- [ ] Fix texts going out of borders
+- [x] Fix texts going out of borders
 - [ ] Fix colors and contrast for some texts
 - [ ] Delete unused imports and variables
 - [ ] Delete commented code
