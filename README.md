@@ -77,7 +77,7 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] Define end-points as env variables
 - [x] Fix texts going out of borders
 - [X] Fix colors and contrast for some texts
-- [ ] Delete unused imports and variables
+- [x] Delete unused imports and variables
 - [ ] Delete commented code
 - [ ] Divide code in multiple components
 - [ ] Delete hardcoded variables

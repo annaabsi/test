@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 16:05 GTM-5
+
+Changes:
+
+- Delete unused imports and variables
+
 ## 2021-09-25 15:50 GTM-5
 
 Changes:

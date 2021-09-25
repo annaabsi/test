@@ -1,10 +1,10 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState, ChangeEvent } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import PeopleDataService from "../../services/PeopleService";
 import PeopleData from "../../types/People";
 import "./index.scss";
 
-const PeopleList: React.FC = (props) => {
+const PeopleList: React.FC = () => {
   const [people, setPeople] = useState<Array<PeopleData>>([]);
   const [searchName, setSearchName] = useState<string>("");
   const [nextPage, setNextPage] = useState<string>("");
@@ -101,6 +101,7 @@ const PeopleList: React.FC = (props) => {
                   <a
                     href={`https://torre.co/${person.username}`}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button></button>
                     <i className="fas fa-arrow-right"></i>
