@@ -42,6 +42,7 @@ yarn test # test
 
 Changelogs stored [here](CHANGELOG.md)
 
+### v0.1
 - [x] ReactJs project start
 - [x] ~~Github Pages deploy~~ Vercel deploy
 - [x] API: Fetch data dinamically
@@ -52,6 +53,16 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] Landing layout
 - [x] Responsive
 - [x] Documentation
+
+### v0.2 (Feedback)
+- [x] Define end-points as env variables
+- [x] Fix texts going out of borders
+- [X] Fix colors and contrast for some texts
+- [x] Delete unused imports and variables
+- [x] Delete commented code
+- [x] Divide code in multiple components
+- [x] Delete hardcoded variables
+- [x] CSS with BEM methodology
 
 <p align="center">
   <a href="#">

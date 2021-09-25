@@ -1,10 +1,11 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState, ChangeEvent } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Card from "../Card"
 import PeopleDataService from "../../services/PeopleService";
 import PeopleData from "../../types/People";
 import "./index.scss";
 
-const PeopleList: React.FC = (props) => {
+const PeopleList: React.FC = () => {
   const [people, setPeople] = useState<Array<PeopleData>>([]);
   const [searchName, setSearchName] = useState<string>("");
   const [nextPage, setNextPage] = useState<string>("");
@@ -19,15 +20,12 @@ const PeopleList: React.FC = (props) => {
   const findPeople = () => {
     PeopleDataService.findPeopleApi(searchName, nextPage).then((response) => {
       setPeople(() => {
-        // console.log(response.data.results);
         return response.data.results;
       });
       setTotalSize(() => {
-        // console.log(response.data.total);
         return response.data.total;
       });
       setNextPage(() => {
-        // console.log(response.data.pagination.next);
         return response.data.pagination.next;
       });
     });
@@ -87,26 +85,7 @@ const PeopleList: React.FC = (props) => {
         >
           {people &&
             people.map((person, index) => (
-              <div className="flex-grid-item">
-                <div className="card" key={index}>
-                  <h2>{person.name}</h2>
-                  <p>{person.locationName}</p>
-                  <div
-                    className="pic"
-                    style={{ backgroundImage: "url(" + person.picture + ")" }}
-                  ></div>
-                  <div className="bio">
-                    <span>{person.professionalHeadline}</span>
-                  </div>
-                  <a
-                    href={`https://torre.co/${person.username}`}
-                    target="_blank"
-                  >
-                    <button></button>
-                    <i className="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
+              <Card {...person} key={index}/>
             ))}
         </InfiniteScroll>
       </div>
