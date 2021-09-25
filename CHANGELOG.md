@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 16:15 GTM-5
+
+Changes:
+
+- Delete commented code
+
 ## 2021-09-25 16:05 GTM-5
 
 Changes:

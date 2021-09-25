@@ -19,15 +19,12 @@ const PeopleList: React.FC = () => {
   const findPeople = () => {
     PeopleDataService.findPeopleApi(searchName, nextPage).then((response) => {
       setPeople(() => {
-        // console.log(response.data.results);
         return response.data.results;
       });
       setTotalSize(() => {
-        // console.log(response.data.total);
         return response.data.total;
       });
       setNextPage(() => {
-        // console.log(response.data.pagination.next);
         return response.data.pagination.next;
       });
     });
