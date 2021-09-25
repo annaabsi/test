@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 15:50 GTM-5
+
+Changes:
+
+- Fix colors and contrast for some texts
+
 ## 2021-09-25 15:45 GTM-5
 
 Changes:
