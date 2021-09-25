@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-25 18:00 GTM-5
+
+Changes:
+
+- CSS with BEM methodology
+
 ## 2021-09-25 17:40 GTM-5
 
 Changes:

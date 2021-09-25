@@ -1,18 +1,19 @@
 import React from "react";
 import PeopleData from "../../types/People";
+import "./index.scss";
 
 const Card: React.FC<PeopleData> = (props: PeopleData) => {
 
   return (
   <div className="flex-grid-item">
     <div className="card">
-      <h2>{props.name}</h2>
-      <p>{props.locationName}</p>
+      <h2 className="card__name">{props.name}</h2>
+      <p className="card__location">{props.locationName}</p>
       <div
-        className="pic"
+        className="card__picture"
         style={{ backgroundImage: "url(" + props.picture + ")" }}
       ></div>
-      <div className="bio">
+      <div className="card__bio">
         <span>{props.professionalHeadline}</span>
       </div>
       <a
@@ -20,8 +21,8 @@ const Card: React.FC<PeopleData> = (props: PeopleData) => {
         target="_blank"
         rel="noreferrer"
       >
-        <button></button>
-        <i className="fas fa-arrow-right"></i>
+        <button className="card__button"></button>
+        <i className="card__arrow fas fa-arrow-right"></i>
       </a>
     </div>
   </div>);

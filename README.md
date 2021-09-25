@@ -81,7 +81,7 @@ Changelogs stored [here](CHANGELOG.md)
 - [x] Delete commented code
 - [x] Divide code in multiple components
 - [x] Delete hardcoded variables
-- [ ] CSS with BEM methodology
+- [x] CSS with BEM methodology
 
 <p align="center">
   <a href="#">

@@ -1,0 +1,126 @@
+.flex-grid-item {
+  height: 210px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 285px;
+}
+
+.card {
+  position: relative;
+  width: 275px;
+  height: 200px;
+  background-color: #fff;
+  overflow: hidden;
+
+  &__name {
+    z-index: 99;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #fff;
+    max-width: 170px;
+    text-shadow: 1px 1px 1px grey;
+  }
+
+  &__location {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #333;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    height: 123px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 38px;
+  }
+
+  &__picture {
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    filter: grayscale(100%);
+    background-color: grey;
+  }
+
+  &__bio {
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    height: 125px;
+    text-align: right;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &__arrow {
+    z-index: 100;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &:hover span {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  &:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  &__button {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: #5f6812;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    mix-blend-mode: hard-light;
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  &:hover .card__button {
+    transform: scale(12);
+  }
+
+  &:hover .card__location {
+    color: #fff;
+    text-shadow: 0px 0px 5px grey;
+  }
+
+  &:hover .card__picture {
+    filter: grayscale(0);
+  }
+}
